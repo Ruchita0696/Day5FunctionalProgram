@@ -8,25 +8,20 @@ namespace FunctionalProgram
 {
     internal class BasicProblems
     {
-        public void Leap_Year()
+        public void Power_Of_2()
         {
-            Console.WriteLine("enter a year : ");
-            int year = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a number : ");
+            string inputByUser = Console.ReadLine();
+            int numVal = Int32.Parse(inputByUser);
+            if (numVal >= 0 || numVal < 31)
+            {
+                int temp = 1;
+                for (int i = 0; i < numVal; i++)
+                {
+                    temp = 2 * temp;
+                    Console.WriteLine(temp);
 
-            if (year > 1000 && year < 9999)
-            {
-                if (year % 4 == 0 || year % 400 == 0)
-                {
-                    Console.WriteLine("Leap year.");
                 }
-                else
-                {
-                    Console.WriteLine("not leap year");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Wrong Input .");
             }
         }
     }

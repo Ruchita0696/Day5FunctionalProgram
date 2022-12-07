@@ -6,7 +6,7 @@
         {
 
             BasicProblems num = new BasicProblems();
-            num.Leap_Year();
+            num.Power_Of_2();
         }
     }
 }
