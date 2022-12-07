@@ -8,21 +8,19 @@ namespace FunctionalProgram
 {
     internal class BasicProblems
     {
-        public void Power_Of_2()
+        public void Harmonic_No()
         {
-            Console.WriteLine("Enter a number : ");
-            string inputByUser = Console.ReadLine();
-            int numVal = Int32.Parse(inputByUser);
-            if (numVal >= 0 || numVal < 31)
+            Console.WriteLine("Enter the last harmonic number\n");
+            double num = Convert.ToDouble(Console.ReadLine());
+            double harmonicSum = 0;
+            for (double i = 1; i <= num; i++)
             {
-                int temp = 1;
-                for (int i = 0; i < numVal; i++)
-                {
-                    temp = 2 * temp;
-                    Console.WriteLine(temp);
-
-                }
+                Console.WriteLine("1/" + i + "=" + (1 / i));
+                harmonicSum += (1 / i);
             }
+            Console.WriteLine("\nThe Sum of harmonic number is :" + harmonicSum);
         }
     }
+        
+    
 }
