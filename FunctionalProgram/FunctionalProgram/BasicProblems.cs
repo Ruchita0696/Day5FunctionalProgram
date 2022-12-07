@@ -8,33 +8,26 @@ namespace FunctionalProgram
 {
     internal class BasicProblems
     {
-        public void flipCoin()
+        public void Leap_Year()
         {
-            int Heads = 0;
-            int Tails = 0;
-            int countFlipCoin = 20;
-            Random random = new Random();
+            Console.WriteLine("enter a year : ");
+            int year = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < countFlipCoin; i++)
+            if (year > 1000 && year < 9999)
             {
-
-                int coinTossCheck = random.Next(0, 2);
-                if (coinTossCheck / 2.0f < 0.5)
+                if (year % 4 == 0 || year % 400 == 0)
                 {
-                    Tails++;
-
+                    Console.WriteLine("Leap year.");
                 }
                 else
                 {
-                    Heads++;
+                    Console.WriteLine("not leap year");
                 }
             }
-            int heads_Percentage = (Heads * 100) / countFlipCoin;
-            Console.WriteLine("Heads percentage is : " + heads_Percentage);
-            int tails_Percentage = (Tails * 100) / countFlipCoin;
-            Console.WriteLine("Tails percentage is : " + tails_Percentage);
-
-
+            else
+            {
+                Console.WriteLine("Wrong Input .");
+            }
         }
     }
 }

@@ -6,7 +6,7 @@
         {
 
             BasicProblems num = new BasicProblems();
-            num.flipCoin();
+            num.Leap_Year();
         }
     }
 }
