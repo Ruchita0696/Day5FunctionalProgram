@@ -8,20 +8,51 @@ namespace FunctionalProgram
 {
     internal class BasicProblems
     {
-        public void Check_Even_Or_Odd()
+        public void Largest_Among_Three_Numbers()
         {
-            int number;
-            Console.WriteLine("Enter the Number to check Even or Odd : ");
-            number = int.Parse(Console.ReadLine());
-            if (number % 2 == 0)
+            // int num1 = 12;
+            // int num2 = 23;
+            // int num3 = 10;
+
+            Console.WriteLine("Enter first number : ");
+            string str1 = Console.ReadLine();
+            int num1 = Int32.Parse(str1);
+            Console.WriteLine("Enter second number : ");
+            string str2 = Console.ReadLine();
+            int num2 = Int32.Parse(str2);
+            Console.WriteLine("Enter third number : ");
+            string str3 = Console.ReadLine();
+            int num3 = Int32.Parse(str3);
+           
+            if (num1 > num2)
             {
-                Console.WriteLine("Number is Even");
+                if (num1 > num3)
+                {
+                    Console.WriteLine(num1 + " is Largest ");
+                }
+                else
+                {
+                    Console.WriteLine(num3 + "  is Largest .");
+                }
             }
             else
             {
-                Console.WriteLine("Number is Odd");
+                if (num2 > num3)
+                {
+                    if (num2 > num1)
+                    {
+                        Console.WriteLine(num2 + " is Largest . ");
+                    }
+                    else
+                    {
+                        Console.WriteLine(num1 + " is Largest . ");
+                    }
+                }
             }
         }
-     } 
-    
+
+    }
+
+
 }
+

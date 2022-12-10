@@ -6,7 +6,7 @@
         {
 
             BasicProblems num = new BasicProblems();
-            num.Check_Even_Or_Odd();
+            num.Largest_Among_Three_Numbers();
         }
     }
 }
