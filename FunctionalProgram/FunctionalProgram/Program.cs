@@ -6,7 +6,7 @@
         {
 
             BasicProblems num = new BasicProblems();
-            num.Check_Char_Vowel_Or_Consonant();
+            num.Check_Even_Or_Odd();
         }
     }
 }

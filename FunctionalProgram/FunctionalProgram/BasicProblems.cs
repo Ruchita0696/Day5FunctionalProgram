@@ -8,26 +8,20 @@ namespace FunctionalProgram
 {
     internal class BasicProblems
     {
-        public void Check_Char_Vowel_Or_Consonant()
+        public void Check_Even_Or_Odd()
         {
-            char ch;
-
-            Console.WriteLine("Enter any character: ");
-            ch = Convert.ToChar(Console.ReadLine());
-
-
-            // Condition for vowel checking
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+            int number;
+            Console.WriteLine("Enter the Number to check Even or Odd : ");
+            number = int.Parse(Console.ReadLine());
+            if (number % 2 == 0)
             {
-
-                Console.WriteLine(ch + " is Vowel.");
-
+                Console.WriteLine("Number is Even");
             }
-            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+            else
             {
-                Console.WriteLine(ch + " is Consonant.");
+                Console.WriteLine("Number is Odd");
             }
-
         }
-    }
+     } 
+    
 }
