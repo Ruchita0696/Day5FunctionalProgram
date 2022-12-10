@@ -6,7 +6,7 @@
         {
 
             BasicProblems num = new BasicProblems();
-            num.Power_Of_2();
+            num.Swap_Two_Number();
         }
     }
 }

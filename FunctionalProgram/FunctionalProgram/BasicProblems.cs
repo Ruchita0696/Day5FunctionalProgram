@@ -8,21 +8,17 @@ namespace FunctionalProgram
 {
     internal class BasicProblems
     {
-        public void Power_Of_2()
+        public void Swap_Two_Number()
         {
-            Console.WriteLine("Enter a number : ");
-            string inputByUser = Console.ReadLine();
-            int numVal = Int32.Parse(inputByUser);
-            if (numVal >= 0 || numVal < 31)
-            {
-                int temp = 1;
-                for (int i = 0; i < numVal; i++)
-                {
-                    temp = 2 * temp;
-                    Console.WriteLine(temp);
-
-                }
-            }
+            int num1 = 15;
+            int num2 = 25;
+            int temp;
+            temp = num1;
+            num1 = num2;
+            num2 = temp;
+            Console.WriteLine("Swapping of number is  : " + num1 + " " + num2);
         }
+            
+        
     }
 }
